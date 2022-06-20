@@ -4,7 +4,7 @@
     left: 15%;
     top: 50%;
     transform: translateY(-50%);
-    width:1000%;
+    width: 1000%;
     max-height: 90%;
   }
 
@@ -17,7 +17,6 @@
     font-weight: 400;
 
     &:before {
-      
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
       font-size: 18px;
@@ -28,7 +27,6 @@
     }
 
     &:after {
-      
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
       font-size: 18px;
@@ -80,88 +78,82 @@
   }
 }
 
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-$timing        : 265ms;
-$iconColor     : #5cdb95;
-$accent        : #5cdb95;
-$bluefade      : #000;
-$gradient      : #5cdb95;
+$timing: 265ms;
+$iconColor: #5cdb95;
+$accent: #5cdb95;
+$bluefade: #000;
+$gradient: #5cdb95;
 
 @mixin transformScale($size: 1) {
-    transform: scale($size);
-    -ms-transform: scale($size);
-    -webkit-transform: scale($size);
+  transform: scale($size);
+  -ms-transform: scale($size);
+  -webkit-transform: scale($size);
 }
 
 body {
-    background-color: rgba($iconColor, 0.05);
+  background-color: rgba($iconColor, 0.05);
 }
 
-.shareone{
+.shareone {
   .social-container {
     width: 285px;
     animation: fadeIn 3s 3s backwards;
     text-align: center;
     margin-left: -15px;
-}
+  }
 
-.social-icons {
-  margin-left: 0px;
+  .social-icons {
+    margin-left: 0px;
     padding: 0px;
     list-style: none;
     margin: 1em;
-  
-    li {
-        display: inline-block;
-        margin: 0.15em;
-        position: relative;
-        font-size: 1.2em;
 
+    li {
+      display: inline-block;
+      margin: 0.15em;
+      position: relative;
+      font-size: 1.2em;
     }
 
     i {
-        color: #fff;
-        position: absolute;
-        top: 10px;
-        left: 13px;
-        font-size:35px;
-        transition: all $timing ease-out;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 13px;
+      font-size: 35px;
+      transition: all $timing ease-out;
     }
 
     a {
-        display: inline-block;
-      
-        &:before {
-            @include transformScale();
-            content: " ";
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            display: block;
-            background: #000;
-            transition: all $timing ease-out;
-        }
-        
-        &:hover:before {
-            transform: scale(0);
-            transition: all $timing ease-in;
-        }
-        
-        &:hover i{
-            @include transformScale(1.5);
-            color: $iconColor;
-            background: #5cdb95;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all $timing ease-in;
-        }
+      display: inline-block;
 
+      &:before {
+        @include transformScale();
+        content: ' ';
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: block;
+        background: #000;
+        transition: all $timing ease-out;
+      }
+
+      &:hover:before {
+        transform: scale(0);
+        transition: all $timing ease-in;
+      }
+
+      &:hover i {
+        @include transformScale(1.5);
+        color: $iconColor;
+        background: #5cdb95;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all $timing ease-in;
+      }
     }
-  
+  }
 }
-
-
-}
-

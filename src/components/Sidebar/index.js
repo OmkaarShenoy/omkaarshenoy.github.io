@@ -8,7 +8,7 @@ import {
   faYoutube,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
