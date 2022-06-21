@@ -2,13 +2,15 @@ element.style {
   background-color: white;
 }
 .home-page {
+  overflow:scroll;
+  
   .text-zone {
     position: absolute;
     left: 15%;
     top: 50%;
     transform: translateY(-50%);
     width: 85%;
-    max-height: 90%;
+    max-height: 100%;
   }
 
   h1 {
@@ -287,4 +289,9 @@ a {
 .wrapper .github:hover .tooltip::before {
   background: #333333;
   color: #ffffff;
+}
+
+.About{
+  position:relative;
+  
 }
