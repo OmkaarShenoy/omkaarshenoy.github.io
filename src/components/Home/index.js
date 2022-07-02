@@ -1,20 +1,15 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import About from '../About/index.js'
-
-
 import './fontawesome.scss';
-
-
 import './index.scss'
-
+import './socials.scss'
 
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = [' ', 'O', 'm','k','a','a','r', ' ', 'S','h','e','n','o','y','.']
+  const nameArray = [' ', 'O', 'm', 'k', 'a', 'a', 'r', ' ', 'S', 'h', 'e', 'n', 'o', 'y', '.']
   const jobArray = []
 
   useEffect(() => {
@@ -56,45 +51,34 @@ const Home = () => {
             />
           </h1>
           <h2>Student | Developer</h2>
+          
           <div class="shareone">
-<div class="wrapper">
-  <div class="social-container">
-    <ul class="social-icons">
-      <li class="icon email">
-        <span class="tooltip">Email</span>
-        <span> <a href="#About" target="_blank" rel="noopener noreferrer"><i class="fa fa-at" style={{ left: '16px', top: '15px' }}></i></a></span>
-      </li>
-      <li class="icon instagram">
-        <span class="tooltip">Instagram</span>
-        <span> <a href="https://www.instagram.com/omkrshny/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" style={{ left: '16px', top: '15px' }}></i></a></span>
-      </li>
-      <li class="icon linkedin">
-        <span class="tooltip">Linkedin</span>
-        <span> <a href="https://www.linkedin.com/in/omkaarshenoy/"><i class="fa fa-linkedin" style={{ left: '16px', top: '15px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
-      </li>
-      <li class="icon github">
-        <span class="tooltip">Github</span>
-        <span> <a href="github.com/OmkaarShenoy/"><i class="fa fa-github" style={{ left: '16px', top: '15px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-
-<div class='About' id='About'>
-<About />
-</div>
-
-
-
-
-
-
-
+            <div class="wrapper">
+              <div class="social-container">
+                <ul class="social-icons">
+                  <li class="icon email">
+                    <span class="tooltip">Email</span>
+                    <span> <a href="#About" target="_blank" rel="noopener noreferrer"><i class="fa fa-at" style={{ left: '16px', top: '15px' }}></i></a></span>
+                  </li>
+                  <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span> <a href="https://www.instagram.com/omkrshny/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" style={{ left: '16px', top: '15px' }}></i></a></span>
+                  </li>
+                  <li class="icon linkedin">
+                    <span class="tooltip">Linkedin</span>
+                    <span> <a href="https://www.linkedin.com/in/omkaarshenoy/"><i class="fa fa-linkedin" style={{ left: '16px', top: '15px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
+                  </li>
+                  <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <span> <a href="github.com/OmkaarShenoy/"><i class="fa fa-github" style={{ left: '16px', top: '15px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
+        
       </div>
-
       <Loader type="pacman" />
     </>
   )
