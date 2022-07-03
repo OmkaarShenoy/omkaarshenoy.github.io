@@ -3,6 +3,7 @@ import './index.scss'
 import './socials.scss'
 import 'animate.css';
 import './typewriteranimation.scss'
+import { ReactComponent as Mouse } from '../icons/mouse.svg'
 
 
 const Landing = () => {
@@ -18,13 +19,13 @@ const Landing = () => {
           <div className="c1"><div class="type-1"> <h1>Hey!👋</h1><br></br></div></div>
           <div className="c2"><div class="type-2"><h1> I'm Omkaar Shenoy. </h1><br></br></div></div>
           <div className="c3"><div class="type-3">Student | Developer</div></div>
-
-
+          
 
 
 
 
           <div class="shareone">
+          
             <div class="wrapper">
 
               <div class="social-container">
@@ -45,13 +46,16 @@ const Landing = () => {
                   <li class="icon github">
                     <span class="tooltip">Github</span>
                     <span> <a href="https://www.github.com/OmkaarShenoy/"><i class="fa fa-github" style={{ left: '14px', top: '13px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
+                    
                   </li>
                 </ul>
 
               </div>
             </div>
           </div>
+
         </div>
+        <div class="scroll"><a href=""><Mouse  width="85px "fill="#aecc28" /></a></div>
 
       </div>
       <Loader type="pacman" />
