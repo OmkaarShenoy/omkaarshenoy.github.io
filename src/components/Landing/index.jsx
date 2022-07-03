@@ -5,7 +5,7 @@ import 'animate.css';
 import './typewriteranimation.scss'
 
 
-const Home = () => {
+const Landing = () => {
 
 
 
@@ -59,4 +59,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Landing

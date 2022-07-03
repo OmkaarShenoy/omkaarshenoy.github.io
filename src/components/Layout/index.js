@@ -1,4 +1,4 @@
-import Home from '../Home/index.js'
+import Home from '../Home/index.jsx'
 import './index.scss'
 
 const Layout = () => {
