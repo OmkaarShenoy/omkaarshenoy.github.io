@@ -15,23 +15,24 @@ a {
 
 .social-container {
   width: 400px;
-
+  
   text-align: left;
 }
 
 .social-icons {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+    margin-left:-14px;
+  -webkit-animation: fadeIn 0.5s 4s backwards; 
+  -moz-animation:    fadeIn 0.5s 4s backwards;
+  -ms-animation:     fadeIn 0.5s 4s backwards;
+  -o-animation:      fadeIn 0.5s 4s backwards;
+  animation:         fadeIn 0.5s 4s backwards;
 
   @keyframes fadein {
       from {
-          opacity: 0;
+          font-size: 0;
       }
       to {
-          opacity: 1;
+          font-size: 100;
       }
   }
 
@@ -86,12 +87,12 @@ a {
   }
 
   i {
-      color: white;
+      color: #aecc28;
       position: absolute;
-      top: 21px;
+      top: 20px;
       left: 21px;
       transition: all $timing ease-out;
-      font-size: 30px;
+      font-size: 35px;
 
       &.fa-at {
           --icon-color: #ffa500;
@@ -106,7 +107,7 @@ a {
       }
 
       &.fa-github {
-          --icon-color: #333333;
+          --icon-color: #b6b1b0;
       }
   }
 
@@ -120,8 +121,9 @@ a {
           width: 60px;
           aspect-ratio: 1;
           border-radius: 100%;
-
-          background: black;
+          
+          
+          
           transition: all $timing ease-out;
       }
 
@@ -147,14 +149,14 @@ a {
   font-size: 14px;
   background: #ffffff;
   color: #ffffff;
-  padding: 5px 8px;
+  padding: 5px 5px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+  transition: all 0.3s cubic-bezier(1, -1.73, 0.78, 2.4);
 
+}
 .wrapper .tooltip::before {
   position: absolute;
   content: '';
@@ -178,21 +180,6 @@ a {
 .wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
-.wrapper .facebook:hover {
-  background: #ffffff;
-}
-
-.wrapper .facebook:hover .tooltip {
-  background: #1877f2;
-}
-
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877f2;
-}
-
-.wrapper .email:hover {
-  background: #ffffff;
-}
 
 .wrapper .email:hover .tooltip {
   background: #ffa500;
@@ -202,9 +189,7 @@ a {
   background: #ffa500;
 }
 
-.wrapper .instagram:hover {
-  background: #ffffff;
-}
+
 
 .wrapper .instagram:hover .tooltip {
   background: #e4405f;
@@ -222,10 +207,7 @@ a {
   background: #0072b1;
 }
 
-.wrapper .github:hover {
-  background: #ffffff;
-  color: #ffffff;
-}
+
 
 .wrapper .github:hover .tooltip {
   background: #333333;

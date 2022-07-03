@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom'
 import Home from '../Home/index.js'
 import './index.scss'
 
@@ -9,7 +8,7 @@ const Layout = () => {
       <div className="page">
 
 
-        <Outlet />
+        <Home />
 
         
         <br />

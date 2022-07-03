@@ -1,83 +1,58 @@
-import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import './fontawesome.scss';
 import './index.scss'
 import './socials.scss'
+import 'animate.css';
+import './typewriteranimation.scss'
 
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = [' ', 'O', 'm', 'k', 'a', 'a', 'r', ' ', 'S', 'h', 'e', 'n', 'o', 'y', '.']
-  const jobArray = []
 
-  useEffect(() => {
-    setTimeout(() => {
-      return setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+
 
   return (
     <>
       <div className="container home-page">
         <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={letterClass}>e</span>
-            <span className={letterClass}>y!</span>
 
-            <span className={`${letterClass} _13`}>&nbsp;</span>
-
-            <span className={`${letterClass} _14`} >👋</span>
+          <div className="c1"><div class="type-1"> <h1>Hey!👋</h1><br></br></div></div>
+          <div className="c2"><div class="type-2"><h1> I'm Omkaar Shenoy. </h1><br></br></div></div>
+          <div className="c3"><div class="type-3">Student | Developer</div></div>
 
 
-            <br />
-            <span className={`${letterClass} _15`}>I</span>
-            <span className={`${letterClass} _15`}>'</span>
-            <span className={`${letterClass} _15`}>m</span>
 
 
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={17}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
-          </h1>
-          <h2>Student | Developer</h2>
-          
+
+
           <div class="shareone">
             <div class="wrapper">
+
               <div class="social-container">
+
                 <ul class="social-icons">
                   <li class="icon email">
                     <span class="tooltip">Email</span>
-                    <span> <a href="#About" target="_blank" rel="noopener noreferrer"><i class="fa fa-at" style={{ left: '16px', top: '15px' }}></i></a></span>
+                    <span> <a href="mailto:omkaarshenoyos@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-at" style={{ left: '14px', top: '13px' }}></i></a></span>
                   </li>
                   <li class="icon instagram">
                     <span class="tooltip">Instagram</span>
-                    <span> <a href="https://www.instagram.com/omkrshny/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" style={{ left: '16px', top: '15px' }}></i></a></span>
+                    <span> <a href="https://www.instagram.com/omkrshny/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" style={{ left: '14px', top: '13px' }}></i></a></span>
                   </li>
                   <li class="icon linkedin">
                     <span class="tooltip">Linkedin</span>
-                    <span> <a href="https://www.linkedin.com/in/omkaarshenoy/"><i class="fa fa-linkedin" style={{ left: '16px', top: '15px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
+                    <span> <a href="https://www.linkedin.com/in/omkaarshenoy/"><i class="fa fa-linkedin" style={{ left: '14px', top: '13px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
                   </li>
                   <li class="icon github">
                     <span class="tooltip">Github</span>
-                    <span> <a href="github.com/OmkaarShenoy/"><i class="fa fa-github" style={{ left: '16px', top: '15px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
+                    <span> <a href="https://www.github.com/OmkaarShenoy/"><i class="fa fa-github" style={{ left: '14px', top: '13px' }} target="_blank" rel="noopener noreferrer"></i></a></span>
                   </li>
                 </ul>
+
               </div>
             </div>
           </div>
         </div>
-        
+
       </div>
       <Loader type="pacman" />
     </>
