@@ -53,11 +53,13 @@ const Landing = () => {
               </div>
             </div>
           </div>
+          <div class="resume"><a href="https://github.com/OmkaarShenoy/Resume/raw/master/main.pdf" download="renamed.pdf"> Resume <i class="fa fa-download" style={{fontSize: '25px'}} rel="noopener noreferrer"></i></a></div>
 
         </div>
-        <div class="scroll"><a href=""><Mouse  width="85px "fill="#aecc28" /></a></div>
+        
 
       </div>
+
       <Loader type="pacman" />
     </>
   )
