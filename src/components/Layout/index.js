@@ -1,4 +1,4 @@
-import Home from '../Home/index.jsx'
+import Portfolio from '../Portfolio/index.jsx'
 import './index.scss'
 
 const Layout = () => {
@@ -8,7 +8,7 @@ const Layout = () => {
       <div className="page">
 
 
-        <Home />
+        <Portfolio />
 
         
         <br />

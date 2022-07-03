@@ -7,7 +7,7 @@ import Landing from '../Landing/index.jsx'
 
 
 
-const Home = () => {
+const Portfolio = () => {
 
 
 
@@ -19,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Portfolio

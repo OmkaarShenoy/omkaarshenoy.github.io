@@ -14102,7 +14102,7 @@ house-user:
     - 6.0.0-beta2
     - 6.0.0-beta3
     - 6.1.0
-  label: Home User
+  label: Portfolio User
   search:
     terms: []
   styles:
