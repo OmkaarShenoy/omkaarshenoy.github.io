@@ -1,44 +1,66 @@
 .experience {
     white-space: pre-line;
-    padding:0px 200px;
-    .line{
-    display: inline-block;
-    top: 6px;
-    left:5px;
-    height: 100%;
-    width: 0.5px;
-    color: white;
-    background-color: white;
-    margin: 10px 32.5px;
-    
+    padding: 0px 200px;
+
+    .line {
+      display: block;
+      top: 6px;
+      left: 5px;
+      height: 100%;
+      width: 0.5px;
+      color: white;
+      background-color: white;
+      margin: 10px 32.5px;
+      span{
+        display:block;
+      }
     }
-    h2{
-        font-size:40px;
-        padding-bottom:25px;
+
+    h2 {
+      font-size: 40px;
+      padding-bottom: 25px;
     }
-    
-    li{
-        display:inline-grid;
-    grid-template-columns: 0fr 1fr;
+  
+    li {
+      display: inline-grid;
+      grid-template-columns: 0fr 1fr;
     }
-    .text{
-        padding-left: 50px;
-        padding-bottom:25px;
-        .title{
-            h3{
-            
-            margin:0px;}
-            }
+
+    .text {
+      padding-left: 50px;
+      padding-bottom: 25px;
+      line-height:15px;
+
+      .title {
+
+        h3 {
+        
+          margin: 0px;
+        }
+      }
+
+      .company {
+        p{
+            font-size:20px;
+        }
+      }
+      .dates{
+        p{
+            font-size: 18px;
+        }
+      }
+      .description{
+        p{
+            line-height:30px;
+        }
+      }
     }
-  img {
-    width: 65px;
-    border-radius: 100%;
+
+    img {
+      width: 65px;
+      border-radius: 100%;
+    }
+
     
   }
-  hr{
-   
-    background-color:#aecc28;
-    width:100%;
-    margin-bottom:35px;
-  }
-}
+  
