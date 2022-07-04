@@ -4,7 +4,7 @@ import './socials.scss'
 import 'animate.css';
 import './typewriteranimation.scss'
 import { ReactComponent as Mouse } from '../icons/mouse.svg'
-
+import {Link} from 'react-scroll'
 
 const Landing = () => {
 
@@ -56,10 +56,9 @@ const Landing = () => {
           <div class="resume"><a href="https://github.com/OmkaarShenoy/Resume/raw/master/main.pdf" download="renamed.pdf"> Resume <i class="fa fa-download" style={{fontSize: '25px'}} rel="noopener noreferrer"></i></a></div>
 
         </div>
-        
+        <div class="scroll"><Link  to="experiences" spy={true} smooth={true}><Mouse  width="85px "fill="#aecc28" /></Link></div>
 
       </div>
-
       <Loader type="pacman" />
     </>
   )

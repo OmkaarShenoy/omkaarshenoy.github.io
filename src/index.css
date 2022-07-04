@@ -1,15 +1,16 @@
 html {
   font-size: 62.5%;
-  font-family: 'Courier New';
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: 'Courier New';
+  
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight:300;
   color: #aecc28;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #15191e;
-  overflow: hidden;
-  display: block;
+  
 }
+
