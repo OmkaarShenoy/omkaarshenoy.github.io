@@ -16,7 +16,7 @@ const Landing = () => {
       <div className="container home-page">
         <div className="text-zone">
 
-          <div className="c1"><div class="type-1"> <h1>Hey!👋</h1><br></br></div></div>
+          <div className="c1"><div class="type-1"> <h1>Hey!</h1><br></br></div></div>
           <div className="c2"><div class="type-2"><h1> I'm Omkaar Shenoy. </h1><br></br></div></div>
           <div className="c3"><div class="type-3">Student | Developer</div></div>
           
