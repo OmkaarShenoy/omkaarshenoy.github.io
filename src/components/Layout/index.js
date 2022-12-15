@@ -10,8 +10,8 @@ const Layout = () => {
     <div className="App">
 
         <div id='home'><Landing /></div>
-       {/* <div id='experiences' ><Experiences experiences={experience} /></div> */}
-       {/* <div id='projects'><Projects /></div>*/}
+       {<div id='experiences' ><Experiences experiences={experience} /></div>}
+       {<div id='projects'><Projects /></div>}
 
         <br />
 
