@@ -1,67 +1,77 @@
 .experience {
-    white-space: pre-line;
-    padding: 0px 250px;
-
-    .line {
-      display: block;
-      top: 6px;
-      left: 5px;
-      height: 100%;
-      width: 0.5px;
-      color: white;
-      background-color: white;
-      margin: 10px 32.5px;
-      span{
-        display:block;
-      }
-    }
-
-    h2 {
-      font-size: 40px;
-      padding-bottom: 25px;
-    }
-  
-    li {
-      display: inline-grid;
-      grid-template-columns: 0fr 1fr;
-    }
-
-    .text {
-      padding-left: 50px;
-      padding-bottom: 25px;
-      line-height:15px;
-
-      .title {
-
-        h3 {
-        
-          margin: 0px;
-        }
-      }
-
-      .company {
-        p{
-            font-size:20px;
-        }
-      }
-      .dates{
-        p{
-            font-size: 18px;
-        }
-      }
-      .description{
-        p{
-            line-height:30px;
-            font-size:18px;
-        }
-      }
-    }
-
-    img {
-      width: 65px;
-      border-radius: 100%;
-    }
-
-    
+  white-space: pre-line;
+  padding: 0px 250px;
+  .Card {
+    background-color: #081D3A;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
   }
-  
+  .Card:hover{
+    box-shadow: 0em 1em 4em #BB3EF6; 
+  }
+  .pic {
+    padding-top: 10px;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  .line {
+    display: block;
+    top: 6px;
+    left: 5px;
+    height: 75%;
+    width: 0.5px;
+    color: white;
+    background-color: white;
+    margin: 0px 32.5px;
+    span {
+      display: block;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+  }
+
+  li {
+    display: inline-grid;
+    grid-template-columns: 0fr 1fr;
+  }
+
+  .text {
+    padding-left: 50px;
+    padding-top: 20px;
+    line-height: 15px;
+
+    .title {
+      h3 {
+        margin: 0px;
+      }
+    }
+
+    .company {
+      p {
+        font-size: 20px;
+      }
+    }
+    .dates {
+      p {
+        font-size: 18px;
+      }
+    }
+    .description {
+      p {
+        line-height: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  img {
+    width: 65px;
+    border-radius: 100%;
+  }
+}

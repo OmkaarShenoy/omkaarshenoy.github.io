@@ -52,11 +52,11 @@ const Landing = () => {
           <div className="resume"><a href="https://docdro.id/tcJMpB2" target="_blank"> Resume <i className="fa fa-download" style={{fontSize: '25px'}} rel="noopener noreferrer"></i></a></div>
 
         </div>
-        {/*<div className="scroll"><Link  to="experiences" spy={true} smooth={true}><Mouse  width="85px "fill="#fff" /></Link></div>*/}
+        {<div className="scroll"><Link  to="experiences" spy={true} smooth={true}><Mouse  width="85px "fill="#BB3EF6" /></Link></div>}
 
 
       </div>
-      <Loader type="pacman" />
+
     </>
   )
 }

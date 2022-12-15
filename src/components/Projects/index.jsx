@@ -5,7 +5,7 @@ const Projects = () => {
     
     <div class='card'>
         <div class='card-text'>
-        <h1>Text</h1>
+        <h1></h1>
         </div>
         <div class='card-pic'>
 

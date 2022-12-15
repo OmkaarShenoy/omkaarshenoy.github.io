@@ -1,14 +1,27 @@
 
 .home-page {
     overflow: scroll;
-    height:100vh;
+    height: 100vh;
+    margin: auto;
+    justify-content: space-around;
+
+    display: flex;
   
     .text-zone {
+        background-color: #081D3A;
+        border-radius: 100px;
+        padding: 50px 385px 50px 100px;
         position: absolute;
-        padding-left: 250px;
         top: 50%;
         transform: translateY(-50%);
+        box-shadow: 0em 1em 4em #BB3EF6; 
         max-height: 100%;
+
+    }
+    .text-zone:hover {
+        
+       
+
     }
     
   
@@ -47,15 +60,12 @@
   
   
 .scroll {
+    cursor: pointer;
     position: absolute;
     bottom: 10px;
     display: flex;
     left: 50%;
-    -webkit-animation: fadeIn 0.5s 5.5s backwards; 
-    -moz-animation:    fadeIn 0.5s 5.5s backwards;
-    -ms-animation:     fadeIn 0.5s 5.5s backwards;
-    -o-animation:      fadeIn 0.5s 5.5s backwards;
-    animation:         fadeIn 0.5s 5.5s backwards;
+
   
     @keyframes fadein {
         from {
@@ -109,11 +119,7 @@
 
 .resume{
     font-size:25px;
-    -webkit-animation: fadeIn 0.5s 5.5s backwards; 
-    -moz-animation:    fadeIn 0.5s 5.5s backwards;
-    -ms-animation:     fadeIn 0.5s 5.5s backwards;
-    -o-animation:      fadeIn 0.5s 5.5s backwards;
-    animation:         fadeIn 0.5s 5.5s backwards;
+
   
     @keyframes fadein {
         from {
