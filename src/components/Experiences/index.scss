@@ -1,13 +1,40 @@
 .experience {
   white-space: pre-line;
   padding: 0px 250px;
+  background-color: #081D3A;
+  max-width: 64vw;
+  margin: auto;
+    justify-content: space-around;
+    padding: 50px 16px;
+    border-radius: 100px;
+    h2{
+      font-size: 40px;
+      /* max-width: 64px; */
+
+      margin-left: 132px;
+
+        font-size: 40px;
+      margin-top:0px;
+      margin-bottom:0px;
+    }
   .Card {
     background-color: #081D3A;
     padding: 25px;
     border-radius: 25px;
     margin-bottom: 20px;
+
   }
   .Card:hover{
+    -moz-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition:transform 0.2s ease-in-out;
+    -ms-transition:transform 0.2s ease-in-out;
     box-shadow: 0em 1em 4em #BB3EF6; 
   }
   .pic {
@@ -30,11 +57,7 @@
     }
   }
 
-  h2 {
-    font-size: 40px;
-    padding-bottom: 25px;
-    padding-top: 40px;
-  }
+
 
   li {
     display: inline-grid;

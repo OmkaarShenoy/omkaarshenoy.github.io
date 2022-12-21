@@ -1,0 +1,37 @@
+
+.about {
+    overflow: scroll;
+    overflow:visible;
+    margin: auto;
+    justify-content: space-around;
+
+    display: flex;
+  
+    .text-zone {
+        background-color: #081D3A;
+        border-radius: 100px;
+        padding:50px 150px;
+        max-width:45vw;
+
+    }
+
+    h1 {
+
+        font-size: 50px;
+        line-height: 90px;
+        margin: 0;
+        
+        font-weight: 900;
+    }
+    h3{
+        white-space: pre-line;
+        color: #A0A0A0;
+        font-size: 18px;
+        font-weight: 700;
+
+        /* margin-bottom: 20px; */
+    }
+
+
+    }
+    

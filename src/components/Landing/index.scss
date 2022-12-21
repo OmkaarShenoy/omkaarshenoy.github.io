@@ -10,28 +10,27 @@
     .text-zone {
         background-color: #081D3A;
         border-radius: 100px;
-        padding: 50px 385px 50px 100px;
+        padding: 50px 150px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        box-shadow: 0em 1em 4em #BB3EF6; 
-        max-height: 100%;
-
-    }
-    .text-zone:hover {
+        box-shadow: 0em 1em 4em #BB3EF6;
+        max-width: 45vw;
         
-       
+        
+
 
     }
+
     
   
     h1 {
 
-        font-size: 80px;
+        font-size: 50px;
         line-height: 90px;
         margin: 0;
         
-        font-weight: 400;
+        font-weight: 900;
         
   
   
@@ -53,6 +52,13 @@
         letter-spacing: 3px;
   
     }
+    h3{
+        color: #A0A0A0;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 0;
+        /* margin-bottom: 20px; */
+    }
   
   
   }
@@ -64,7 +70,6 @@
     position: absolute;
     bottom: 10px;
     display: flex;
-    left: 50%;
 
   
     @keyframes fadein {
@@ -116,9 +121,14 @@
         }
     }
 }
+.scroll:hover{
+    transform: translateY(-2px);
+}
 
 .resume{
     font-size:25px;
+    margin-bottom:50px;
+    font-weight:900;
 
   
     @keyframes fadein {

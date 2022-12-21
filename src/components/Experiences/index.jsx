@@ -4,8 +4,7 @@ import * as React from 'react'
 
 export default function ExperienceSection({ experiences }) {
   return (
-
-    <div className="experience">
+    <div className="experience" >
       <h2>Experiences</h2>
 
       <ul style={{ listStyleType: 'none' }}>
