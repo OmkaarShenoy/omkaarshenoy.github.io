@@ -1,8 +1,5 @@
 import './index.scss'
 
-import { ReactComponent as Mouse } from '../icons/mouse.svg'
-import { Link } from 'react-scroll'
-
 const Aboutme = () => {
   return (
     <>

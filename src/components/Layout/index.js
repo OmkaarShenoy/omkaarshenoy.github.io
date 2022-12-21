@@ -12,7 +12,7 @@ const Layout = () => {
         <div id='home'><Landing /></div>
         <div id='aboutme'><Aboutme /></div>
        {<div id='experiences' style={{paddingTop:'50px'}} ><Experiences experiences={experience} /></div>}
-       {<div id='projects'><Projects /></div>}
+       {/* {<div id='projects'><Projects /></div>} */}
 
         <br />
 
