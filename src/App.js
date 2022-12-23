@@ -8,6 +8,9 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
+import ReactGA from 'react-ga';
+// Initialize google analytics using the tracking 
+ReactGA.initialize('UA-167XXXXXX-X');
 
 function App() {
   return (

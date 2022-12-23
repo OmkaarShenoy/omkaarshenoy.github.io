@@ -97,12 +97,42 @@ const Landing = () => {
           </div>
           <div>
             <h3>
-              Greetings! My name is <span style={{color:'white', fontWidth:'900px  '}}>Omkaar</span>, and I am an enthusiastic student of
-              Computer Science at <span style={{color:'white', fontWidth:'900px  '}}>Arizona State University </span> <span><img style={{width:'32px'}} src=" https://i.ibb.co/jzXn3nt/asu.png" alt="asu logo" border="0" /></span>. I am keen on working
-              with technology, data, and its capability to tackle real-world
-              challenges.{' '}
+              Hello! My name is{' '}
+              <span style={{ color: 'white', fontWidth: '900px  ' }}>
+                Omkaar
+              </span>
+              , and I am an passionate student of Computer Science at{' '}
+              <span style={{ color: 'white', fontWidth: '900px  ' }}>
+                Arizona State University{' '}
+              </span>{' '}
+              <span>
+                <img
+                  style={{ width: '32px' }}
+                  src=" https://i.ibb.co/jzXn3nt/asu.png"
+                  alt="asu logo"
+                  border="0"
+                />
+              </span>
+              . I am keen on working with technology, data, and its capability
+              to tackle real-world challenges.{' '}
             </h3>
-            <h3>Previously, I have worked at <span style={{color:'white', fontWidth:'900px  ' }}> National Public Radio </span><span> <img style={{width:'40px'}} src="https://i.ibb.co/cyBT2Fs/npr.png" alt="npr logo" border="0" /> </span> as Software Developer Intern on the Web Team.</h3>
+            <h3>
+              Previously, I have worked at{' '}
+              <span style={{ color: 'white', fontWidth: '900px  ' }}>
+                {' '}
+                National Public Radio{' '}
+              </span>
+              <span>
+                {' '}
+                <img
+                  style={{ width: '40px' }}
+                  src="https://i.ibb.co/cyBT2Fs/npr.png"
+                  alt="npr logo"
+                  border="0"
+                />{' '}
+              </span>{' '}
+              as Software Developer Intern on the Web Team.
+            </h3>
             <h3>Scroll down to learn more about me!</h3>
           </div>
         </div>
