@@ -3,16 +3,18 @@ import Layout from './components/Layout'
 import Aboutme from './components/AboutMe'
 import Experiences from './components/Experiences/'
 import './App.scss'
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
+import React, {useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
-// Initialize google analytics using the tracking 
-ReactGA.initialize('UA-167XXXXXX-X');
+import { BrowserRouter as Router} from 'react-router-dom';
+
+  const TRACKING_ID = "UA-252626256-1"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
 
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       <Routes>
