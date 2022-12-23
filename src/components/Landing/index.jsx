@@ -15,7 +15,7 @@ const useAnalyticsEventTracker = (category="Blog category") => {
 
 
 const Landing = () => {
-  const gaEventTracker = useAnalyticsEventTracker('Contact us');
+  const gaEventTracker = useAnalyticsEventTracker('Landing Page');
   return (
     <>
       <div className="container home-page">
