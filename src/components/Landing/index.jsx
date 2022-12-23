@@ -4,18 +4,17 @@ import './typewriteranimation.scss'
 import 'animate.css'
 import { ReactComponent as Mouse } from '../icons/mouse.svg'
 import { Link } from 'react-scroll'
-import ReactGA from "react-ga";
+import ReactGA from 'react-ga'
 
-const useAnalyticsEventTracker = (category="Blog category") => {
-  const eventTracker = (action = "test action", label = "test label") => {
-    ReactGA.event({category, action, label});
+const useAnalyticsEventTracker = (category = 'Blog category') => {
+  const eventTracker = (action = 'test action', label = 'test label') => {
+    ReactGA.event({ category, action, label })
   }
-  return eventTracker;
+  return eventTracker
 }
 
-
 const Landing = () => {
-  const gaEventTracker = useAnalyticsEventTracker('Landing Page');
+  const gaEventTracker = useAnalyticsEventTracker('Landing Page')
   return (
     <>
       <div className="container home-page">
@@ -34,6 +33,7 @@ const Landing = () => {
                         href="mailto:omkaarshenoyos@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => gaEventTracker('emailClick')}
                       >
                         <i
                           className="fa fa-at"
@@ -48,6 +48,7 @@ const Landing = () => {
                       {' '}
                       <a
                         href="https://www.instagram.com/omkrshny/"
+                        onClick={() => gaEventTracker('instagramClick')}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -62,7 +63,10 @@ const Landing = () => {
                     <span className="tooltip">Linkedin</span>
                     <span>
                       {' '}
-                      <a href="https://www.linkedin.com/in/omkaarshenoy/">
+                      <a
+                        href="https://www.linkedin.com/in/omkaarshenoy/"
+                        onClick={() => gaEventTracker('linkedInClick')}
+                      >
                         <i
                           className="fa fa-linkedin"
                           style={{ left: '14px', top: '13px' }}
@@ -76,7 +80,10 @@ const Landing = () => {
                     <span className="tooltip">Github</span>
                     <span>
                       {' '}
-                      <a href="https://www.github.com/OmkaarShenoy/">
+                      <a
+                        href="https://www.github.com/OmkaarShenoy/"
+                        onClick={() => gaEventTracker('githubClick')}
+                      >
                         <i
                           className="fa fa-github"
                           style={{ left: '14px', top: '13px' }}
@@ -95,7 +102,7 @@ const Landing = () => {
               href="https://docdro.id/tcJMpB2"
               target="_blank"
               rel="noreferrer"
-              onClick={()=>gaEventTracker('resumeClick')}
+              onClick={() => gaEventTracker('resumeClick')}
             >
               {' '}
               Resume{' '}
