@@ -4,8 +4,18 @@ import './typewriteranimation.scss'
 import 'animate.css'
 import { ReactComponent as Mouse } from '../icons/mouse.svg'
 import { Link } from 'react-scroll'
+import ReactGA from "react-ga";
+
+const useAnalyticsEventTracker = (category="Blog category") => {
+  const eventTracker = (action = "test action", label = "test label") => {
+    ReactGA.event({category, action, label});
+  }
+  return eventTracker;
+}
+
 
 const Landing = () => {
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
   return (
     <>
       <div className="container home-page">
@@ -85,6 +95,7 @@ const Landing = () => {
               href="https://docdro.id/tcJMpB2"
               target="_blank"
               rel="noreferrer"
+              onClick={()=>gaEventTracker('resumeClick')}
             >
               {' '}
               Resume{' '}
